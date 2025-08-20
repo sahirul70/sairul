@@ -43,7 +43,7 @@
                 <a href="#skill" class="nav-item nav-link">Skill</a>
                 <a href="#service" class="nav-item nav-link">Service</a>
                 <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-                <a href="project.html" class="nav-item nav-link">project</a>
+                <a href="#Project" class="nav-item nav-link">project</a>
                 <!--<a href="#testimonial" class="nav-item nav-link">Review</a>
                 <a href="#blog" class="nav-item nav-link">Blog</a>-->
                 <a href="#contact" class="nav-item nav-link">Contact</a>
@@ -101,13 +101,245 @@
 
 
     <!-- About Start -->
-    <div class="container-fluid py-5" id="about">
+    <div class="container-fluid py-5" id="Project">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Project</h1>
                 <h1 class="position-absolute text-uppercase text-primary">Project</h1>
             </div>
             <div class="row align-items-center">
+                <h3 class="mb-4 align-items-center text-center">Marketing OKR Dashboard</h3>
+                <div class="col-lg-12 pb-12 pb-lg-0">
+                    <iframe title="Marketing OKR" width="1140" height="1024" src="https://app.powerbi.com/reportEmbed?reportId=70ebe4f9-d465-4414-96dd-a99fda89e250&autoAuth=true&ctid=aebbc012-6f19-49cf-90bd-c5bf4fdd9e4a" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div class="col-lg-12">
+                    <h3 class="mb-4 text-center">About this project</h3>
+                    <p>
+                        
+                        <h5>Dataset Description </h5>
+
+                        The dataset used here is a Marketing Performance Dataset, 
+                        containing KPIs (Key Performance Indicators) across multiple channels and deal pipelines.
+                        Likely data sources include CRM systems (e.g., Salesforce, HubSpot),
+                        marketing automation tools, and ad platforms.<br>
+                        
+                        <h5>Work Process</h5>
+
+                        Here’s a high-level workflow for building this dashboard:<br>
+
+                         <h6>Data Collection</h6>
+
+                        Extract leads, deals, and financial data from CRM (HubSpot/Salesforce).<br>
+
+                        Pull cost data from marketing platforms (Google Ads, Meta, LinkedIn, etc.).<br>
+
+                        Aggregate into a single dataset (Excel, SQL, or Data Warehouse).<br>
+
+                        <h6> Data Transformation Clean and normalize channel names.<br>
+
+                        Create calculated fields: <br>
+
+                        MQL, SQL, Won definitions<br>
+
+                        Conversion rates<br>
+
+                        CPL = Expense ÷ Leads<br>
+
+                        CAC = Expense ÷ Won Deals<br>
+
+                        Targets (from marketing plan for 2025)<br>
+
+                        Time intelligence: Week-over-Week, Quarter, MTD (Month-to-Date).<br>
+
+                        <h6>Dashboard Development</h6>
+
+                        Choose BI Tool Power BI.<br>
+
+                        Build filters (Deal, Channel, Quarter).<br>
+
+                        Add KPI cards for quick insights.<br>
+
+                        Visualize trends by channel and deal type.<br>
+
+                        Compare actual vs. target (goal tracking).<br>
+
+                        <h6> Validation & Testing</h6>
+
+                        Cross-check metrics with CRM reports.<br>
+
+                        Validate conversion funnel logic.<br>
+
+                        Ensure targets match marketing OKRs.<br>
+
+                        <h6> Deployment & Monitoring</h6>
+
+                        Publish dashboard.<br>
+
+                        Schedule automatic data refresh (daily/weekly).<br>
+
+                        Use dashboard for quarterly OKR reviews..<br>
+                        
+                        ✅ Summary:<br>
+                        This Marketing OKR Dashboard integrates leads, deals, conversions, and cost metrics into one view.
+                        It allows management to track performance vs. goals, analyze channel efficiency (CPL, CAC),
+                        and ensure marketing activities are aligned with 2025 targets.</p>
+                    <a href="https://github.com/sahirul70/HR_powerbi_project.git" class="btn btn-outline-primary mr-4">github</a>
+                </div>
+                <!---End project 1-->
+                 <div class="row align-items-center">
+                <h3 class="mb-4 align-items-center text-center">Regulatory Controls Monitoring Dashboard</h3>
+                <div class="col-lg-12 pb-12 pb-lg-0">
+                    <iframe title="draft version" width="1124" height="800" src="https://app.powerbi.com/view?r=eyJrIjoiOGIzYWQ1ZGItZTcyYS00Y2Y2LWE4MGItNTEzZDZiMzEyMzI3IiwidCI6ImFlYmJjMDEyLTZmMTktNDljZi05MGJkLWM1YmY0ZmRkOWU0YSIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div class="col-lg-12">
+                    <h3 class="mb-4 text-center">About this project</h3>
+                    <p>
+                        
+                        <h5>Dataset Description </h5>
+
+                        The dataset represents regulatory inspection and compliance control data collected across 
+                        multiple agencies and sites (SITESAGENCES), analyzed by DEX (regional/functional units).<br>
+                        
+                        <h5>Work Process</h5>
+
+                        Here’s a high-level workflow for building this dashboard:<br>
+
+                         <h6>Data Collection</h6>
+
+                        Collect inspection and compliance reports from regulatory systems.<br>
+
+                        Import data from field audits, internal quality checks, and agency logs.<br>
+
+                        Extract site-wise and DEX-wise control records..<br>
+
+                        <h6> Data Transformation </h6>
+
+                        Clean and standardize site and DEX names.<br>
+
+                        Derive indicators:<br>
+
+                        Passage (Qualité) = Passed Controls ÷ Total Controls<br>
+
+                        Conformité Planning = On-Time Controls ÷ Planned Controls<br>
+
+                        Levées de Réserve % = Resolved Reserves ÷ Total Reserves<br>
+
+                        Create summary tables for “Top 5/10/15 sites”<br>
+
+                        <h6>Dashboard Development</h6>
+
+                        Choose BI Tool Power BI.<br>
+
+                        Build interactive filters (Date, SITESAGENCES, DEX).<br>
+
+                        KPI Cards for quick indicators.<br>
+
+                        Pie/Bar charts for distribution by status.<br>
+
+                        Narrative “Summary Section” for management.<br>
+
+                        <h6> Validation & Testing</h6>
+
+                        Cross-check with compliance officers.<br>
+
+                        Ensure reserve counts match inspection records.<br>
+
+                        Validate pass rate against official regulatory statistics.<br>
+
+                        <h6> Deployment & Monitoring</h6>
+
+                        Dashboard published for compliance managers.<br>
+
+                        Updated regularly (weekly/monthly).<br>
+
+                        Used in regulatory review meetings to track performance and resolve critical issues.<br>
+                        
+                        ✅ Summary:<br>
+                        
+                        This Regulatory Controls Monitoring Dashboard provides a real-time compliance overview. 
+                        It consolidates quality, planning, and reserve resolution data at multiple levels (DEX, sites, agencies). Management can track inspection pass rates, planning adherence, 
+                        and reserve closure progress, enabling data-driven regulatory compliance decisions.</p>
+                    <a href="https://github.com/sahirul70/HR_powerbi_project.git" class="btn btn-outline-primary mr-4">github</a>
+                </div><!--end project 2-->
+                 <div class="row align-items-center">
+                <h3 class="mb-4 align-items-center text-center">HR Analysis Dashboard</h3>
+                <div class="col-lg-12 pb-12 pb-lg-0">
+                    <iframe title="HR Analysis Dashboard" width="1124" height="800" src="https://app.powerbi.com/view?r=eyJrIjoiNTIyOTgwNDUtZTcxMC00ZGQyLWE0YjMtMDI4OTY0ZmVjNWRlIiwidCI6ImFlYmJjMDEyLTZmMTktNDljZi05MGJkLWM1YmY0ZmRkOWU0YSIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div class="col-lg-12">
+                    <h3 class="mb-4 text-center">About this project</h3>
+                    <p>
+                        
+                        <h5>Dataset Description </h5>
+
+                        The dataset combines HR data (attrition, employees) and operational performance data 
+                        (delivery & preparation work). It is likely sourced from HRIS (Human Resource Information Systems), 
+                        Project Management Tools, and Operational Logs.<br>
+                        
+                        <h5>Work Process</h5>
+
+                        Here’s a high-level workflow for building this dashboard:<br>
+
+                         <h6>Data Collection</h6>
+
+                        HR data: Extract from HRIS system (e.g., SAP SuccessFactors, Workday).<br>
+
+                        Operations data: Extract from task/project management tools (Power BI).<br>
+
+                        Standardize into a single data warehouse (SQL, Excel, Power BI model).<br>
+
+                        <h6> Data Transformation Clean and normalize channel names.</h6>
+
+                        Clean data (normalize roles, education, regions).<br>
+
+                        Create calculated fields:<br>
+
+                        Attrition Rate = Attrited ÷ Total Employees<br>
+
+                        Active Employees = Total – Attrited<br>
+
+                        Delivery Qty = Completed Deliverables<br>
+
+                        Blocker % = Blocked Deliveries ÷ Total Deliveries<br>
+
+                        Aggregate by Department, Region, Month, Job Role.<br>
+
+                        <h6>Dashboard Development</h6>
+
+                        Tool: Power BI (given style and visuals).<br>
+
+                        Page 1 (Attrition Dashboard):  <br>                      
+                
+                        KPI cards, pie/bar charts for attrition by different factors.<br>
+
+                        Page 2 (Weekly Staff Performance):<br>
+
+                        KPI cards, monthly trends, blocker analysis, region-wise breakdown.<br>
+
+                        <h6> Validation & Testing</h6>
+
+                        Cross-check with HR reports (headcount, attrition).<br>
+
+                        Verify delivery numbers with operational logs.<br>
+
+                        Validate blocker definitions with project managers.<br>
+                        <h6> Deployment </h6>
+                        Publish dashboard for HR & Operations leadership.<br>
+
+                        Schedule weekly refresh for operational data, monthly refresh for HR data.<br>
+
+                        Used for decision-making on staffing needs, attrition reduction, and workload planning.<br>
+                        
+                        ✅ Summary:<br>
+                        This combined dashboard provides a holistic view of workforce and operations.
+
+                        Page 1: Focuses on HR analytics (attrition, employee demographics).<br>
+
+                        Page 2: Focuses on operational performance (delivery, blockers, demand codes).<br>
+                        Together, they allow management to balance workforce capacity with business delivery performance.</p>
+                    <a href="https://github.com/sahirul70/HR_powerbi_project.git" class="btn btn-outline-primary mr-4">github</a>
+                </div><!--end project 3-->
+                 <div class="row align-items-center">
                 <h3 class="mb-4 align-items-center">Marketing OKR Dashboard</h3>
                 <div class="col-lg-12 pb-12 pb-lg-0">
                     <iframe title="Marketing OKR" width="1124" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMjE4YzhhYzctNmNkYy00ZTE2LTk4OGYtNmIwNDY1NWYzNWVlIiwidCI6ImFlYmJjMDEyLTZmMTktNDljZi05MGJkLWM1YmY0ZmRkOWU0YSIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
@@ -184,504 +416,88 @@
                         It allows management to track performance vs. goals, analyze channel efficiency (CPL, CAC),
                         and ensure marketing activities are aligned with 2025 targets.</p>
                     <a href="https://github.com/sahirul70/HR_powerbi_project.git" class="btn btn-outline-primary mr-4">github</a>
-                    <a href="" class="btn btn-outline-primary">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid py-5" id="about">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Project</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Project</h1>
-            </div>
-            <div class="row align-items-center">
-                <h3 class="mb-4 align-items-center">Employee Presence Insight</h3>
+                </div><!--end project 4-->
+                 <div class="row align-items-center">
+                <h3 class="mb-4 align-items-center">Marketing OKR Dashboard</h3>
                 <div class="col-lg-12 pb-12 pb-lg-0">
-                    <iframe title="Marketing OKR" width="1200" height="800" src="https://app.powerbi.com/view?r=eyJrIjoiMjE4YzhhYzctNmNkYy00ZTE2LTk4OGYtNmIwNDY1NWYzNWVlIiwidCI6ImFlYmJjMDEyLTZmMTktNDljZi05MGJkLWM1YmY0ZmRkOWU0YSIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+                    <iframe title="Marketing OKR" width="1124" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMjE4YzhhYzctNmNkYy00ZTE2LTk4OGYtNmIwNDY1NWYzNWVlIiwidCI6ImFlYmJjMDEyLTZmMTktNDljZi05MGJkLWM1YmY0ZmRkOWU0YSIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
                 </div>
                 <div class="col-lg-12">
-                    <h3 class="mb-4">About this project</h3>
+                    <h3 class="mb-4 text-center">About this project</h3>
                     <p>
                         
-                        This is the HR employee's dataset collected from CodeBasics.<br> 
+                        <h5>Dataset Description </h5>
+
+                        The dataset used here is a Marketing Performance Dataset, 
+                        containing KPIs (Key Performance Indicators) across multiple channels and deal pipelines.
+                        Likely data sources include CRM systems (e.g., Salesforce, HubSpot),
+                        marketing automation tools, and ad platforms.<br>
                         
-                        1. Overall Presence Insights:
-                           Presence Percentage: 92% of the employees are present on average.
-                           Work From Home (WFH) Percentage: 10% of the employees are working from home.
-                         Sick Leave (SL) Percentage: 1.10% of the employees are on sick leave.<br>
+                        <h5>Work Process</h5>
+
+                        Here’s a high-level workflow for building this dashboard:<br>
+
+                         <h6>Data Collection</h6>
+
+                        Extract leads, deals, and financial data from CRM (HubSpot/Salesforce).<br>
+
+                        Pull cost data from marketing platforms (Google Ads, Meta, LinkedIn, etc.).<br>
+
+                        Aggregate into a single dataset (Excel, SQL, or Data Warehouse).<br>
+
+                        <h6> Data Transformation Clean and normalize channel names.<br>
+
+                        Create calculated fields: <br>
+
+                        MQL, SQL, Won definitions<br>
+
+                        Conversion rates<br>
+
+                        CPL = Expense ÷ Leads<br>
+
+                        CAC = Expense ÷ Won Deals<br>
+
+                        Targets (from marketing plan for 2025)<br>
+
+                        Time intelligence: Week-over-Week, Quarter, MTD (Month-to-Date).<br>
+
+                        <h6>Dashboard Development</h6>
+
+                        Choose BI Tool Power BI.<br>
+
+                        Build filters (Deal, Channel, Quarter).<br>
+
+                        Add KPI cards for quick insights.<br>
+
+                        Visualize trends by channel and deal type.<br>
+
+                        Compare actual vs. target (goal tracking).<br>
+
+                        <h6> Validation & Testing</h6>
+
+                        Cross-check metrics with CRM reports.<br>
+
+                        Validate conversion funnel logic.<br>
+
+                        Ensure targets match marketing OKRs.<br>
+
+                        <h6> Deployment & Monitoring</h6>
+
+                        Publish dashboard.<br>
+
+                        Schedule automatic data refresh (daily/weekly).<br>
+
+                        Use dashboard for quarterly OKR reviews..<br>
                         
-                        2. Employee Presence Breakdown:
-                           Top Performers: Some employees like Alexander Davenport have a 100% presence and 0% in WFH and SL.
-                           Variations:  Employees like Ana Little have a lower presence (76%) and higher SL percentage (1.82%).<br>
-                        
-                        3. Trends by Date:
-                           Presence Percentage by Date: There are fluctuations in presence percentage over time, with some notable dips around May 2022 (down to 78%) and peaks at 97%.
-                         WFH Percentage by Date: The WFH percentage also shows variability, peaking at 23% around May 2022.
-                         SL Percentage by Date: The sick leave percentage increases notably towards the end, reaching a peak of 5.3%.<br>
-                        
-                        4. Trends by Day of the Week:
-                           Presence by Day: The presence percentage is slightly lower on Thursdays (91%) and Fridays (90%) compared to other days.
-                         WFH by Day:  Fridays have the highest WFH percentage (26.11%).
-                          SL by Day: Sick leave tends to peak on Fridays (2.22%).<br>
-                        
-                        5. Employee Presence Details:
-                           - This section shows a detailed breakdown of each employee’s presence, WFH, and SL for specific dates in April 2022.<br>
-                        
-                        Overall, the dashboard provides a clear overview of employee attendance, work-from-home trends, and sick leave, with insights into specific patterns by date and day of the week.</p>
+                        ✅ Summary:<br>
+                        This Marketing OKR Dashboard integrates leads, deals, conversions, and cost metrics into one view.
+                        It allows management to track performance vs. goals, analyze channel efficiency (CPL, CAC),
+                        and ensure marketing activities are aligned with 2025 targets.</p>
                     <a href="https://github.com/sahirul70/HR_powerbi_project.git" class="btn btn-outline-primary mr-4">github</a>
-                    <a href="" class="btn btn-outline-primary">Learn More</a>
-                </div>
+                </div><!--end project 5-->
             </div>
         </div>
     </div>
-    <!-- About End -->
-
-    <!-- About Start -->
-    <div class="container-fluid py-5" id="about">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Project</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Project</h1>
-            </div>
-            <div class="row align-items-center">
-                <h3 class="mb-4 align-items-center">Employee Presence Insight</h3>
-                <div class="col-lg-12 pb-12 pb-lg-0">
-                    <iframe title="HR Analytics Atliq_masked_my" width="1200" height="500" src="https://app.powerbi.com/reportEmbed?reportId=63635663-c613-467f-ae1d-b63231e1f446&autoAuth=true&ctid=aebbc012-6f19-49cf-90bd-c5bf4fdd9e4a" frameborder="0" allowFullScreen="true"></iframe>
-                </div>
-                <div class="col-lg-12">
-                    <h3 class="mb-4">About this project</h3>
-                    <p>
-                        
-                        This is the HR employee's dataset collected from CodeBasics.<br> 
-                        
-                        1. Overall Presence Insights:
-                           Presence Percentage: 92% of the employees are present on average.
-                           Work From Home (WFH) Percentage: 10% of the employees are working from home.
-                         Sick Leave (SL) Percentage: 1.10% of the employees are on sick leave.<br>
-                        
-                        2. Employee Presence Breakdown:
-                           Top Performers: Some employees like Alexander Davenport have a 100% presence and 0% in WFH and SL.
-                           Variations:  Employees like Ana Little have a lower presence (76%) and higher SL percentage (1.82%).<br>
-                        
-                        3. Trends by Date:
-                           Presence Percentage by Date: There are fluctuations in presence percentage over time, with some notable dips around May 2022 (down to 78%) and peaks at 97%.
-                         WFH Percentage by Date: The WFH percentage also shows variability, peaking at 23% around May 2022.
-                         SL Percentage by Date: The sick leave percentage increases notably towards the end, reaching a peak of 5.3%.<br>
-                        
-                        4. Trends by Day of the Week:
-                           Presence by Day: The presence percentage is slightly lower on Thursdays (91%) and Fridays (90%) compared to other days.
-                         WFH by Day:  Fridays have the highest WFH percentage (26.11%).
-                          SL by Day: Sick leave tends to peak on Fridays (2.22%).<br>
-                        
-                        5. Employee Presence Details:
-                           - This section shows a detailed breakdown of each employee’s presence, WFH, and SL for specific dates in April 2022.<br>
-                        
-                        Overall, the dashboard provides a clear overview of employee attendance, work-from-home trends, and sick leave, with insights into specific patterns by date and day of the week.</p>
-                    <a href="https://github.com/sahirul70/HR_powerbi_project.git" class="btn btn-outline-primary mr-4">github</a>
-                    <a href="" class="btn btn-outline-primary">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
-
-
-    <!-- Qualification Start -->
-    <div class="container-fluid py-5" id="qualification">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h3 class="mb-4">My Education</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">BSC In CSE</h5>
-                            <p class="mb-2"><strong>Bangladesh University</strong> | <small>Jan 2019 - Dec 2022</small></p>
-                            <p>I have done here a lot of technical things with Data Science, Machine Learning, Deep Learning, Artificial Intelligence, and ERP Software. Project -2: Face-Recognition-Based-Attendance-Management-System (final Semester) Project-1: Age-and-Gender-Decorations  </p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Diploma In Computer Science </h5>
-                            <p class="mb-2"><strong>Institute of Engineering & Technology(IET - Rangpur) </strong> | <small>Jun 2013 - Dec 2017 </small></p>
-                            <p>I have completed my 4 years diploma here on computer science. I have gathered knowledge of hardware, networking and many more topic related computer science from here. </p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Secondary School Certificate Examination (S.S.C) </h5>
-                            <p class="mb-2"><strong>Ruhea High School </strong> | <small>Jan 2010 – Apri 2013</small></p>
-                            <p>Group: 		Science<br>
-                                Board: 		Dinajpur<br>
-                                Year :		2013
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <h3 class="mb-4">My Expericence</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Data Analyst (Intern)</h5>
-                            <p class="mb-2"><strong>data solution 360 </strong> | <small>2022 Dec - Runing</small></p>
-                            <p>Data analysis project with Power Bi, SQL, Python, And Excel Using various kinds of data sets to create various interactive dashboards, such as supply chain, Survey Data Analysis, Sales Analysis etc. </p>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Data Analysis Bootcamp</h5>
-                            <p class="mb-2"><strong>Alex Freberg </strong> | <small>2022 jan - 2022 Nav</small></p>
-                            <p> Data analysis project with Power Bi, SQL, Python, Web Scraping, Tableau And Excel Using various kinds of data sets to create various interactive dashboards, such as supply chain, Survey Data Analysis, Sales Analysis etc.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Qualification End -->
-
-
-    <!-- Skill Start -->
-    <div class="container-fluid py-5" id="skill">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Analysis</h6>
-                            <h6 class="font-weight-bold">85%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">POWER BI</h6>
-                            <h6 class="font-weight-bold">95%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Python</h6>
-                            <h6 class="font-weight-bold">85%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Excel</h6>
-                            <h6 class="font-weight-bold">90%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">SQL</h6>
-                            <h6 class="font-weight-bold">90%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Web Scraping</h6>
-                            <h6 class="font-weight-bold">95%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Data Science</h6>
-                            <h6 class="font-weight-bold">85%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Scikit-learn</h6>
-                            <h6 class="font-weight-bold">50%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Skill End -->
-
-
-    <!-- Portfolio Start -->
-    <div class="container-fluid pt-5 pb-3" id="portfolio">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Gallery</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Portfolio</h1>
-            </div>
-            <div class="row">
-                <div class="col-12 text-center mb-2">
-                    <ul class="list-inline mb-4" id="portfolio-flters">
-                        <li class="btn btn-sm btn-outline-primary m-1 active"  data-filter="*">All</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Python</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Power BI</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">SQL</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".Fourth">Excel</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row portfolio-container">
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/SQL.png" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a  target="_blank" href="https://github.com/sahirul70/SQl-Data-Analysis-Project/blob/main/COVID%20Portfolio%20Project%20-%20Data%20Exploration.sql">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                                <!--<a style=' color:#fff,font-size:20px ;'href="https://github.com/sahirul70/SQl-Data-Analysis-Project/blob/main/COVID%20Portfolio%20Project%20-%20Data%20Exploration.sql">Details</a>-->
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/visual.png" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a target="_blank" href="https://github.com/sahirul70/Data-Analysis/blob/main/Data_analysis_fast_project.ipynb" >
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/DATA-CLEANING-with-SQL.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a target="_blank" href="https://github.com/sahirul70/SQl-Data-Analysis-Project/blob/main/Data%20Cleaning%20Portfolio%20Project%20Queries.sql">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/hitmap.png" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a target="_blank" href="https://github.com/sahirul70/Data-Analysis-python/blob/main/Movie%20Project.ipynb" >
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/Survey_data_3.png" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a target="_blank" href="https://github.com/sahirul70/Data-Analysis-powerBi-project/blob/main/SERVAR%20DATA%20DESH%20BORRD.pbix" >
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/Assignment4.png" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="https://github.com/sahirul70/Data-Analysis-powerBi-project/blob/main/Sales%20data%20analysis.pbix" target="_blank">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item Fourth">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/Sales-Distribution-Practice project-2.png" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="https://github.com/sahirul70/Data-Analysis-Project-Excel/blob/main/Sales-Distribution-Practice%20project-2.xlsx" target="_blank">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item Fourth">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/Sales dashboard excel.png" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="https://github.com/sahirul70/Data-Analysis-Project-Excel/blob/main/Sales%20Dashboard%20-%20Data%20Project%201%20.xlsx" target="_blank">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item Fourth">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/financialdashboard.png" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="https://github.com/sahirul70/Data-Analysis-Project-Excel/blob/main/Financial-Dashboard.xlsx" target="_blank">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio End -->
-
-
-    <!-- Testimonial Start --><!--
-    <div class="container-fluid py-5" id="testimonial">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Review</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Clients Say</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="owl-carousel testimonial-carousel">
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>
-                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
-                            <h5 class="font-weight-bold m-0">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>
-                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
-                            <h5 class="font-weight-bold m-0">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>
-                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
-                            <h5 class="font-weight-bold m-0">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>-->
-    <!-- Testimonial End -->
-
-
-    <!-- Blog Start --><!--
-    <div class="container-fluid pt-5" id="blog">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Blog</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Latest Blog</h1>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-1.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
-                </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-2.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
-                </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-3.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
-                </div>
-            </div>
-        </div>
-    </div>-->
-    <!-- Blog End -->
-
-
-    <!-- Contact Start -->
-    <div class="container-fluid py-5" id="contact">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="contact-form text-center">
-                        <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                            <div class="form-row">
-                                <div class="control-group col-sm-6">
-                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
-                                        required="required" data-validation-required-message="Please enter your name" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="control-group col-sm-6">
-                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
-                                        required="required" data-validation-required-message="Please enter your email" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
-                                    required="required" data-validation-required-message="Please enter a subject" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
-                                    required="required"
-                                    data-validation-required-message="Please enter your message"></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div>
-                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Send
-                                    Message</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact End -->
 
 
     <!-- Footer Start -->
