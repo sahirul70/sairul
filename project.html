@@ -350,66 +350,71 @@
                         
                         <h5>Dataset Description </h5>
 
-                        The dataset used here is a Marketing Performance Dataset, 
-                        containing KPIs (Key Performance Indicators) across multiple channels and deal pipelines.
-                        Likely data sources include CRM systems (e.g., Salesforce, HubSpot),
-                        marketing automation tools, and ad platforms.<br>
+                        This looks like a Sales & Customer Analytics dataset combining financial, customer,
+                         and geographic data. It likely comes
+                         from ERP/CRM systems (SAP, Salesforce, Dynamics) and financial systems.<br>
                         
                         <h5>Work Process</h5>
 
-                        Here’s a high-level workflow for building this dashboard:<br>
-
                          <h6>Data Collection</h6>
 
-                        Extract leads, deals, and financial data from CRM (HubSpot/Salesforce).<br>
+                        Pull sales and finance data from ERP/CRM (orders, invoices, costs).<br>
 
-                        Pull cost data from marketing platforms (Google Ads, Meta, LinkedIn, etc.).<br>
+                        Get customer data (segments, industries, geography).<br>
 
-                        Aggregate into a single dataset (Excel, SQL, or Data Warehouse).<br>
+                        Combine shipping/logistics or loan/credit impact data.<br>
 
-                        <h6> Data Transformation Clean and normalize channel names.<br>
+                        <h6> Data Transformation .</h6>
 
-                        Create calculated fields: <br>
+                        Clean dataset (remove duplicates, standardize customer/product names).<br>
 
-                        MQL, SQL, Won definitions<br>
+                        Build derived fields:<br>
 
-                        Conversion rates<br>
+                        Gross Profit = Revenue – Cost<br>
 
-                        CPL = Expense ÷ Leads<br>
+                        Profit Margin % = Profit ÷ Revenue<br>
 
-                        CAC = Expense ÷ Won Deals<br>
+                        Sales Growth % = (Current – Previous) ÷ Previous<br>
 
-                        Targets (from marketing plan for 2025)<br>
+                        Aggregate by:<br>
 
-                        Time intelligence: Week-over-Week, Quarter, MTD (Month-to-Date).<br>
+                        Customer<br>
+
+                        Product category<br>
+
+                        Region<br>
+
+                        Time period (Month, Quarter)<br>
 
                         <h6>Dashboard Development</h6>
 
                         Choose BI Tool Power BI.<br>
 
-                        Build filters (Deal, Channel, Quarter).<br>
+                        Create KPI cards for executive summary.<br>
 
-                        Add KPI cards for quick insights.<br>
+                        Line charts for trend analysis.<br>
 
-                        Visualize trends by channel and deal type.<br>
+                        Ranking tables for customers/products.<br>
 
-                        Compare actual vs. target (goal tracking).<br>
+                        Maps for geographic sales.<br>
+
+                        Bar charts for comparative performance (top vs bottom customers).<br>
 
                         <h6> Validation & Testing</h6>
 
-                        Cross-check metrics with CRM reports.<br>
+                        Match totals with financial system reports.<br>
 
-                        Validate conversion funnel logic.<br>
+                        Cross-check customer counts and revenue values.<br>
 
-                        Ensure targets match marketing OKRs.<br>
+                        Verify mapping/geography matches CRM records.<br>
 
                         <h6> Deployment & Monitoring</h6>
 
-                        Publish dashboard.<br>
+                        Publish to Power BI.<br>
 
-                        Schedule automatic data refresh (daily/weekly).<br>
+                        Schedule refresh (daily/weekly depending on data).<br>
 
-                        Use dashboard for quarterly OKR reviews..<br>
+                        Used by Sales Directors, Finance, and Customer Success teams to track performance and adjust strategy.<br>
                         
                         ✅ Summary:<br>
                         This dashboard is a comprehensive sales and customer analytics tool. It provides executive KPIs 
