@@ -108,7 +108,7 @@
                 <h1 class="position-absolute text-uppercase text-primary">Project</h1>
             </div>
             <div class="row align-items-center">
-                <h3 class="mb-4 align-items-center text-center">Marketing OKR Dashboard</h3>
+                <h3 class="mb-4 align-items-center text-center">multi-page Project Portfolio Dashboard (PDC)</h3>
                 <div class="col-lg-12 pb-12 pb-lg-0">
                     <iframe title="Marketing OKR" width="1140" height="1024" src="https://app.powerbi.com/reportEmbed?reportId=70ebe4f9-d465-4414-96dd-a99fda89e250&autoAuth=true&ctid=aebbc012-6f19-49cf-90bd-c5bf4fdd9e4a" frameborder="0" allowFullScreen="true"></iframe>
                 </div>
@@ -118,10 +118,8 @@
                         
                         <h5>Dataset Description </h5>
 
-                        The dataset used here is a Marketing Performance Dataset, 
-                        containing KPIs (Key Performance Indicators) across multiple channels and deal pipelines.
-                        Likely data sources include CRM systems (e.g., Salesforce, HubSpot),
-                        marketing automation tools, and ad platforms.<br>
+                        The dataset integrates project management, scheduling, cost, and contractor data. 
+                        It most likely comes from Primavera P6, ERP systems, and project control tools<br>
                         
                         <h5>Work Process</h5>
 
@@ -129,64 +127,79 @@
 
                          <h6>Data Collection</h6>
 
-                        Extract leads, deals, and financial data from CRM (HubSpot/Salesforce).<br>
+                        Extract project metadata, cost, and schedule data from:
 
-                        Pull cost data from marketing platforms (Google Ads, Meta, LinkedIn, etc.).<br>
+                        Primavera P6 (scheduling)
 
-                        Aggregate into a single dataset (Excel, SQL, or Data Warehouse).<br>
+                        ERP/Finance system (SAP/Oracle)
 
-                        <h6> Data Transformation Clean and normalize channel names.<br>
+                        Contractor reports
 
-                        Create calculated fields: <br>
+                        Energization tracking logs<br>
 
-                        MQL, SQL, Won definitions<br>
+                        <h6> Data Transformation Clean and normalize channel names. </h6>
 
-                        Conversion rates<br>
+                        Standardize project IDs, contractor names, and status categories.<br>
 
-                        CPL = Expense ÷ Leads<br>
+                        Calculate KPIs:<br>
 
-                        CAC = Expense ÷ Won Deals<br>
+                        SPI = Earned Value ÷ Planned Value<br>
 
-                        Targets (from marketing plan for 2025)<br>
+                        CPI = Earned Value ÷ Actual Cost<br>
 
-                        Time intelligence: Week-over-Week, Quarter, MTD (Month-to-Date).<br>
+                        Energization % = Energized ÷ Total<br>
+
+                        Create hierarchy: Department → Program → Project → Contractor.<br>
 
                         <h6>Dashboard Development</h6>
 
-                        Choose BI Tool Power BI.<br>
+                        Tool: Power BI (the style confirms it).<br>
 
-                        Build filters (Deal, Channel, Quarter).<br>
+                        Page navigation built with buttons (Portfolio Overview, Regional View, etc.).<br>
 
-                        Add KPI cards for quick insights.<br>
+                        Visuals:<br>
 
-                        Visualize trends by channel and deal type.<br>
+                        Donut & Bar for project breakdowns.<br>
 
-                        Compare actual vs. target (goal tracking).<br>
+                        Heatmaps for department status.<br>
+
+                        KPI cards for top metrics.<br>
+
+                        Tables for detailed drill-downs.<br>
 
                         <h6> Validation & Testing</h6>
 
-                        Cross-check metrics with CRM reports.<br>
+                        Cross-check financial totals with accounting system.
 
-                        Validate conversion funnel logic.<br>
+                        Validate SPI & CPI against P6 reports.
 
-                        Ensure targets match marketing OKRs.<br>
+                        Verify project status with PMO reports.<br>
 
                         <h6> Deployment & Monitoring</h6>
 
                         Publish dashboard.<br>
 
-                        Schedule automatic data refresh (daily/weekly).<br>
+                        Dashboard refreshed monthly or weekly.<br>
 
-                        Use dashboard for quarterly OKR reviews..<br>
+                        Used by PMO, executives, contractors, and regulators to track:<br>
+
+                        Delays & risks<br>
+
+                        Contractor performance<br>
+
+                        Schedule compliance (P6 usage)<br>
+
+                        Energization progress of Saudi power projects.<br>
                         
                         ✅ Summary:<br>
-                        This Marketing OKR Dashboard integrates leads, deals, conversions, and cost metrics into one view.
-                        It allows management to track performance vs. goals, analyze channel efficiency (CPL, CAC),
-                        and ensure marketing activities are aligned with 2025 targets.</p>
+                        This PDC Portfolio Dashboard provides a 360° view of power projects. It integrates cost, 
+                        schedule, and contractor performance into one system. The multi-page design supports executives (high-level KPIs),
+                         PMO (detailed tracking), and contractors (performance monitoring)</p>
                     <a href="https://github.com/sahirul70/HR_powerbi_project.git" class="btn btn-outline-primary mr-4">github</a>
                 </div>
+            </div>
                 <!---End project 1-->
-                 <div class="row align-items-center">
+            <div class="row align-items-center">
                 <h3 class="mb-4 align-items-center text-center">Regulatory Controls Monitoring Dashboard</h3>
                 <div class="col-lg-12 pb-12 pb-lg-0">
                     <iframe title="draft version" width="1124" height="800" src="https://app.powerbi.com/view?r=eyJrIjoiOGIzYWQ1ZGItZTcyYS00Y2Y2LWE4MGItNTEzZDZiMzEyMzI3IiwidCI6ImFlYmJjMDEyLTZmMTktNDljZi05MGJkLWM1YmY0ZmRkOWU0YSIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
@@ -260,8 +273,9 @@
                         It consolidates quality, planning, and reserve resolution data at multiple levels (DEX, sites, agencies). Management can track inspection pass rates, planning adherence, 
                         and reserve closure progress, enabling data-driven regulatory compliance decisions.</p>
                     <a href="https://github.com/sahirul70/HR_powerbi_project.git" class="btn btn-outline-primary mr-4">github</a>
-                </div><!--end project 2-->
-                 <div class="row align-items-center">
+                </div>
+            </div><!--end project 2-->
+            <div class="row align-items-center">
                 <h3 class="mb-4 align-items-center text-center">HR Analysis Dashboard</h3>
                 <div class="col-lg-12 pb-12 pb-lg-0">
                     <iframe title="HR Analysis Dashboard" width="1124" height="800" src="https://app.powerbi.com/view?r=eyJrIjoiNTIyOTgwNDUtZTcxMC00ZGQyLWE0YjMtMDI4OTY0ZmVjNWRlIiwidCI6ImFlYmJjMDEyLTZmMTktNDljZi05MGJkLWM1YmY0ZmRkOWU0YSIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
@@ -338,8 +352,9 @@
                         Page 2: Focuses on operational performance (delivery, blockers, demand codes).<br>
                         Together, they allow management to balance workforce capacity with business delivery performance.</p>
                     <a href="https://github.com/sahirul70/HR_powerbi_project.git" class="btn btn-outline-primary mr-4">github</a>
-                </div><!--end project 3-->
-                 <div class="row align-items-center">
+                </div>
+            </div><!--end project 3-->
+            <class="row align-items-center">
                 <h3 class="mb-4 align-items-center">LLGA - Dashboard</h3>
                 <div class="col-lg-12 pb-12 pb-lg-0">
                     <iframe title="LLGA - Dashboard" width="1124" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiNDgzYWM0MzEtMzZlYi00NGJjLTg5ZjItM2JkMmJlZmYyOGI4IiwidCI6ImFlYmJjMDEyLTZmMTktNDljZi05MGJkLWM1YmY0ZmRkOWU0YSIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
@@ -421,8 +436,8 @@
                         (revenue, profit, margin), detailed customer insights (top/bottom customers, trends), and geographic performance distribution. It helps leadership identify 
                         high-value customers, track financial health, and spot underperforming segments.</p>
                     <a href="https://github.com/sahirul70/HR_powerbi_project.git" class="btn btn-outline-primary mr-4">github</a>
-                </div><!--end project 4-->
-                 <div class="row align-items-center">
+            </div> <!--end project 4-->
+            <div class="row align-items-center">
                 <h3 class="mb-4 align-items-center">Marketing OKR Dashboard</h3>
                 <div class="col-lg-12 pb-12 pb-lg-0">
                     <iframe title="Marketing OKR" width="1124" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMjE4YzhhYzctNmNkYy00ZTE2LTk4OGYtNmIwNDY1NWYzNWVlIiwidCI6ImFlYmJjMDEyLTZmMTktNDljZi05MGJkLWM1YmY0ZmRkOWU0YSIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
@@ -521,6 +536,7 @@
             <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Sairul Islam</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="https://www.linkedin.com/in/sairulislam/">Sairul Islam</a>
             </p>
         </div>
+    
     </div>
     <!-- Footer End -->
 
