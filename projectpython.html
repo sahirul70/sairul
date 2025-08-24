@@ -139,7 +139,7 @@
                         category profitability, sub-category contributions, and customer segment insights. Managers can quickly identify growth drivers,
                         loss-making areas, and regional differences,
                         making it a practical tool for data-driven decision-making in e-commerce strategy.</p>
-                    <a href="https://python-ecommerce-dash-board-3.onrender.com/" class="btn btn-outline-primary mr-4">github</a>
+                    <a href="https://python-ecommerce-dash-board-3.onrender.com/" class="btn btn-outline-primary mr-4">Website</a>
                 </div>
             </div>
                 <!---End project 1-->
@@ -213,13 +213,13 @@
                         Users can search for books and instantly receive tailored recommendations with images and author details. 
                         Overall, this project demonstrates the practical use of machine learning in personalized content delivery, 
                         enhancing user experience in digital libraries or online bookstores.</p>
-                    <a href="https://book-recom-3.onrender.com/" class="btn btn-outline-primary mr-4">github</a>
+                    <a href="https://book-recom-3.onrender.com/" class="btn btn-outline-primary mr-4">Website</a>
                 </div>
             </div><!--end project 2-->
             <div class="row align-items-center">
-                <h3 class="mb-4 align-items-center text-center">HR Analysis Dashboard</h3>
+                <h3 class="mb-4 align-items-center text-center">AGRI AI: Fruits Detection</h3>
                 <div class="col-lg-12 pb-12 pb-lg-0">
-                    <iframe title="HR Analysis Dashboard" width="1124" height="800" src="https://app.powerbi.com/view?r=eyJrIjoiNTIyOTgwNDUtZTcxMC00ZGQyLWE0YjMtMDI4OTY0ZmVjNWRlIiwidCI6ImFlYmJjMDEyLTZmMTktNDljZi05MGJkLWM1YmY0ZmRkOWU0YSIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+                    <img class="img-fluid rounded w-100" src="img/Fruits detection project.png" alt="">
                 </div>
                 <div class="col-lg-12">
                     <h3 class="mb-4 text-center">About this project</h3>
@@ -233,69 +233,60 @@
                         
                         <h5>Work Process</h5>
 
-                        Here’s a high-level workflow for building this dashboard:<br>
+                        Data & labeling <br>
 
-                         <h6>Data Collection</h6>
+                        Collect fruit images (field photos + web). Target classes: e.g., apple, banana, orange, grape, strawberry, pear… <br>
 
-                        HR data: Extract from HRIS system (e.g., SAP SuccessFactors, Workday).<br>
+                        Label with LabelImg/Roboflow → YOLO format (.txt per image: class x_center y_center width height normalized 0–1).<br>
 
-                        Operations data: Extract from task/project management tools (Power BI).<br>
+                        Split train/val/test (e.g., 70/20/10). Add augmentations (flip, HSV, mosaic, blur) to handle lighting and occlusion.<br>
 
-                        Standardize into a single data warehouse (SQL, Excel, Power BI model).<br>
+                        Model training (YOLOv9)<br>
 
-                        <h6> Data Transformation Clean and normalize channel names.</h6>
+                        Prepare a data.yaml (paths, class names, counts).<br>
 
-                        Clean data (normalize roles, education, regions).<br>
+                        Start from yolov9s/l pretrained weights.<br>
 
-                        Create calculated fields:<br>
+                        Typical args: img=640, batch=16, epochs=100–300, lr=0.01, optimizer=SGD or AdamW.<br>
 
-                        Attrition Rate = Attrited ÷ Total Employees<br>
+                        Monitor mAP@0.5 / mAP@0.5:0.95, precision/recall, and loss curves; early stop on plateau.<br>
 
-                        Active Employees = Total – Attrited<br>
+                        Evaluation & export<br>
 
-                        Delivery Qty = Completed Deliverables<br>
+                        Validate on the test set; tune conf (e.g., 0.25–0.35) and NMS IoU (0.5) for best trade-off.<br>
 
-                        Blocker % = Blocked Deliveries ÷ Total Deliveries<br>
+                        Export weights to best.pt (or ONNX/TensorRT if needed).<br>
 
-                        Aggregate by Department, Region, Month, Job Role.<br>
+                        Streamlit app (backend inference)<br>
 
-                        <h6>Dashboard Development</h6>
+                        streamlit UI: file uploader → image bytes → preprocessing.<br>
 
-                        Tool: Power BI (given style and visuals).<br>
+                        Load best.pt once (cache). Run inference, draw boxes/labels/scores, return image.<br>
 
-                        Page 1 (Attrition Dashboard):  <br>                      
-                
-                        KPI cards, pie/bar charts for attrition by different factors.<br>
+                        Optional: show per-class counts, latency, confidence slider.<br>
 
-                        Page 2 (Weekly Staff Performance):<br>
+                        Folder sketch:<br>
 
-                        KPI cards, monthly trends, blocker analysis, region-wise breakdown.<br>
+                        app.py / models/best.pt / data/ / utils/ / requirements.txt<br>
 
-                        <h6> Validation & Testing</h6>
 
-                        Cross-check with HR reports (headcount, attrition).<br>
+                        Deployment<br>
 
-                        Verify delivery numbers with operational logs.<br>
+                        Local: streamlit run app.py.<br>
 
-                        Validate blocker definitions with project managers.<br>
-                        <h6> Deployment </h6>
-                        Publish dashboard for HR & Operations leadership.<br>
-
-                        Schedule weekly refresh for operational data, monthly refresh for HR data.<br>
-
-                        Used for decision-making on staffing needs, attrition reduction, and workload planning.<br>
+                        Cloud: Streamlit Community Cloud / Docker on VM; set torch + opencv-python-headless deps; use CPU or CUDA.<br>
                         
-                        ✅ Summary:<br>
-                        This combined dashboard provides a holistic view of workforce and operations.
-
-                        Page 1: Focuses on HR analytics (attrition, employee demographics).<br>
-
-                        Page 2: Focuses on operational performance (delivery, blockers, demand codes).<br>
-                        Together, they allow management to balance workforce capacity with business delivery performance.</p>
-                    <a href="https://github.com/sahirul70/HR_powerbi_project.git" class="btn btn-outline-primary mr-4">github</a>
+                        <h6>✅ Summary:</h6>
+                        This project builds a real-time fruit detector using YOLOv9 trained on a custom labeled dataset, 
+                        wrapped in a Streamlit interface for easy image upload and visualization. The pipeline covers data curation, 
+                        robust annotation, transfer-learning-based training, quantitative validation (mAP/precision/recall), and a lightweight web app 
+                        for inference. Users drag-and-drop a photo and instantly see bounding boxes and class names, enabling quick quality checks or
+                         automated counting in agricultural workflows. For next steps, consider: adding more orchard conditions, model pruning/quantization
+                          for edge devices, and a batch API to process folders or video streams.</p>
+                    <a href="https://github.com/sahirul70/fruits_dections/tree/main" class="btn btn-outline-primary mr-4">github</a>
                 </div>
             </div><!--end project 3-->
-            <class="row align-items-center">
+            <!--<class="row align-items-center">
                 <h3 class="mb-4 align-items-center">LLGA - Dashboard</h3>
                 <div class="col-lg-12 pb-12 pb-lg-0">
                     <iframe title="LLGA - Dashboard" width="1124" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiNDgzYWM0MzEtMzZlYi00NGJjLTg5ZjItM2JkMmJlZmYyOGI4IiwidCI6ImFlYmJjMDEyLTZmMTktNDljZi05MGJkLWM1YmY0ZmRkOWU0YSIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
@@ -375,7 +366,7 @@
                         (revenue, profit, margin), detailed customer insights (top/bottom customers, trends), and geographic performance distribution. It helps leadership identify 
                         high-value customers, track financial health, and spot underperforming segments.</p>
                     <a href="https://github.com/sahirul70/HR_powerbi_project.git" class="btn btn-outline-primary mr-4">github</a>
-            </div> <!--end project 4-->
+            </div> <!--end project 4--
             <div class="row align-items-center">
                 <h3 class="mb-4 align-items-center">Marketing OKR Dashboard</h3>
                 <div class="col-lg-12 pb-12 pb-lg-0">
@@ -447,8 +438,8 @@
                         It allows management to track performance vs. goals, analyze channel efficiency (CPL, CAC),
                         and ensure marketing activities are aligned with 2025 targets.</p>
                     <a href="https://github.com/sahirul70/HR_powerbi_project.git" class="btn btn-outline-primary mr-4">github</a>
-                </div><!--end project 5-->
-            </div>
+                </div><!--end project 5->
+            </div>-->
         </div>
     </div>
 
