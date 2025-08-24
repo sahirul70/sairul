@@ -144,79 +144,76 @@
             </div>
                 <!---End project 1-->
             <div class="row align-items-center">
-                <h3 class="mb-4 align-items-center text-center">Regulatory Controls Monitoring Dashboard</h3>
+                <h3 class="mb-4 align-items-center text-center">Book Recommendation System Useing Machine Learing </h3>
                 <div class="col-lg-12 pb-12 pb-lg-0">
-                    <iframe title="draft version" width="1124" height="800" src="https://app.powerbi.com/view?r=eyJrIjoiOGIzYWQ1ZGItZTcyYS00Y2Y2LWE4MGItNTEzZDZiMzEyMzI3IiwidCI6ImFlYmJjMDEyLTZmMTktNDljZi05MGJkLWM1YmY0ZmRkOWU0YSIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+                    <img class="img-fluid rounded w-100" src="img/movie.png" alt="">
                 </div>
                 <div class="col-lg-12">
                     <h3 class="mb-4 text-center">About this project</h3>
                     <p>
                         
-                        <h5>Dataset Description </h5>
+                        <h5>Work Process of the Project</h5>
+                        1. Data Collection & Preprocessing
 
-                        The dataset represents regulatory inspection and compliance control data collected across 
-                        multiple agencies and sites (SITESAGENCES), analyzed by DEX (regional/functional units).<br>
+                        Dataset used: Publicly available book ratings dataset (e.g., Book-Crossing or Goodreads-style data).<br>
+
+                        Fields include:<br>
+
+                        Book_Title, Author, Image_URL, Votes (number of ratings), Average_Rating, User_ID.<br>
+
+                        Preprocessing steps:<br>
+
+                        Remove duplicates and null values.<br>
+
+                        Create a pivot table: User_ID × Book_Title with ratings as values.<br>
+
+                        <h6> Machine Learning Model</h6>
+
+                        Collaborative Filtering (CF):<br>
+
+                        Based on user-item interaction matrix.<br>
+
+                        Uses similarity measures like Cosine Similarity or KNN between books.<br>
+
+                        If a user likes a book, the system recommends similar books read by other users.<br>
+
+                        Popularity-based Recommender:<br>
+
+                        Top 50 books displayed (by votes + ratings).<br>
+
+                        Example: Harry Potter series dominates due to high ratings and votes.<br>
+
+                        <h6>Web Application Development</h6>
+
+                        Framework: streamlight (backend).<br>
+
+                        Frontend: HTML + CSS + Bootstrap.<br>
+
+                        Steps:<br>
+
+                        User inputs a book name.<br>
+
+                        ML model fetches Top 4-5 recommended books with cover image, author.<br>
+
+                        Another page shows Top 50 books overall.<br>
                         
-                        <h5>Work Process</h5>
-
-                        Here’s a high-level workflow for building this dashboard:<br>
-
-                         <h6>Data Collection</h6>
-
-                        Collect inspection and compliance reports from regulatory systems.<br>
-
-                        Import data from field audits, internal quality checks, and agency logs.<br>
-
-                        Extract site-wise and DEX-wise control records..<br>
-
-                        <h6> Data Transformation </h6>
-
-                        Clean and standardize site and DEX names.<br>
-
-                        Derive indicators:<br>
-
-                        Passage (Qualité) = Passed Controls ÷ Total Controls<br>
-
-                        Conformité Planning = On-Time Controls ÷ Planned Controls<br>
-
-                        Levées de Réserve % = Resolved Reserves ÷ Total Reserves<br>
-
-                        Create summary tables for “Top 5/10/15 sites”<br>
-
-                        <h6>Dashboard Development</h6>
-
-                        Choose BI Tool Power BI.<br>
-
-                        Build interactive filters (Date, SITESAGENCES, DEX).<br>
-
-                        KPI Cards for quick indicators.<br>
-
-                        Pie/Bar charts for distribution by status.<br>
-
-                        Narrative “Summary Section” for management.<br>
-
-                        <h6> Validation & Testing</h6>
-
-                        Cross-check with compliance officers.<br>
-
-                        Ensure reserve counts match inspection records.<br>
-
-                        Validate pass rate against official regulatory statistics.<br>
-
-                        <h6> Deployment & Monitoring</h6>
-
-                        Dashboard published for compliance managers.<br>
-
-                        Updated regularly (weekly/monthly).<br>
-
-                        Used in regulatory review meetings to track performance and resolve critical issues.<br>
+                        <h6>✅ Summary:</h6>
                         
-                        ✅ Summary:<br>
-                        
-                        This Regulatory Controls Monitoring Dashboard provides a real-time compliance overview. 
-                        It consolidates quality, planning, and reserve resolution data at multiple levels (DEX, sites, agencies). Management can track inspection pass rates, planning adherence, 
-                        and reserve closure progress, enabling data-driven regulatory compliance decisions.</p>
-                    <a href="https://github.com/sahirul70/HR_powerbi_project.git" class="btn btn-outline-primary mr-4">github</a>
+                        This project is a Book Recommendation System built using Machine Learning and deployed as a web 
+                        application. The dataset consists of book ratings, votes, and metadata such as title, author, and cover images.
+                         To create recommendations, two approaches were combined: popularity-based filtering and collaborative filtering.<br>
+
+                        The popularity model identifies the Top 50 books by analyzing total votes and average ratings,
+                        allowing new users to immediately see trending and highly rated books (e.g., the Harry Potter series). 
+                        The collaborative filtering model, on the other hand, leverages user-book interaction data. Using cosine similarity on
+                        the user-item matrix, the system recommends books similar to the one a user inputs. For instance, if the user searches for 
+                        “Colony,” the model suggests related books by similar authors or genres such as Sandra Brown’s Envy and Robin Cook’s Vector.<br>
+
+                        The system is deployed using Flask, with a simple and user-friendly frontend built in HTML and CSS.
+                        Users can search for books and instantly receive tailored recommendations with images and author details. 
+                        Overall, this project demonstrates the practical use of machine learning in personalized content delivery, 
+                        enhancing user experience in digital libraries or online bookstores.</p>
+                    <a href="https://book-recom-3.onrender.com/" class="btn btn-outline-primary mr-4">github</a>
                 </div>
             </div><!--end project 2-->
             <div class="row align-items-center">
